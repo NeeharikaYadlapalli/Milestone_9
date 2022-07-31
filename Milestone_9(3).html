@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1>JavaScript Modules</h1>
+
+<p id="demo"></p>
+
+<script type="module">
+import { name, age } from "./person.js";
+
+let text = "My name is " + name + ", I am " + age + ".";
+
+document.getElementById("demo").innerHTML = text
+</script>
+
+</body>
+</html>
+
+
+<html>
+<body>
+<h1>JavaScript Modules</h1>
+
+<p id="demo"></p>
+
+<script type="module">
+import message from "./message.js";
+
+document.getElementById("demo").innerHTML = message();
+
+var fs = require('fs');
+
+fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
+ if (err) throw err;
+  
+  console.log('File Renamed!');
+});
+
+</script>
+</body>
+</html>
